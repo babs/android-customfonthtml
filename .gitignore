@@ -1,0 +1,6 @@
+bin
+gen
+.settings
+proguard/
+misc/gfx/vectoricons/*_*.png
+misc/config/*.bak
