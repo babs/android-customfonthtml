@@ -449,32 +449,40 @@ public class CustomHtml {
 			}
 		}
 
+		@Override
 		public void setDocumentLocator(Locator locator) {
 		}
 
+		@Override
 		public void startDocument() throws SAXException {
 		}
 
+		@Override
 		public void endDocument() throws SAXException {
 		}
 
+		@Override
 		public void startPrefixMapping(String prefix, String uri)
 				throws SAXException {
 		}
 
+		@Override
 		public void endPrefixMapping(String prefix) throws SAXException {
 		}
 
+		@Override
 		public void startElement(String uri, String localName, String qName,
 				Attributes attributes) throws SAXException {
 			handleStartTag(localName, attributes);
 		}
 
+		@Override
 		public void endElement(String uri, String localName, String qName)
 				throws SAXException {
 			handleEndTag(localName);
 		}
 
+		@Override
 		public void characters(char ch[], int start, int length)
 				throws SAXException {
 			StringBuilder sb = new StringBuilder();
@@ -514,14 +522,17 @@ public class CustomHtml {
 			mSpannableStringBuilder.append(sb);
 		}
 
+		@Override
 		public void ignorableWhitespace(char ch[], int start, int length)
 				throws SAXException {
 		}
 
+		@Override
 		public void processingInstruction(String target, String data)
 				throws SAXException {
 		}
 
+		@Override
 		public void skippedEntity(String name) throws SAXException {
 		}
 
